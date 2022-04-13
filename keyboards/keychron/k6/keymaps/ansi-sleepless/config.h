@@ -1,0 +1,5 @@
+#pragma once
+
+#define DYNAMIC_KEYMAP_LAYER_COUNT 5
+
+#define VIA_QMK_RBGLIGHT_ENABLE
