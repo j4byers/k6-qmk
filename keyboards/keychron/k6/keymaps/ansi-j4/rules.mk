@@ -9,3 +9,6 @@ endif
 
 # Enable console for debugging
 # CONSOLE_ENABLE = yes
+
+# enable support for openrgb
+OPENRGB_ENABLE = yes
