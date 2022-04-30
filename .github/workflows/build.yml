@@ -10,7 +10,7 @@ jobs:
       - name: Clone SonixQMK
         run: git clone https://github.com/SonixQMK/qmk_firmware.git
       - name: Switch to OpenRGB Branch
-        run: git checkout sn32_master_openrgb
+        run: git checkout origin/sn32_master_openrgb
       - name: Install qmk deps
         run: cd qmk_firmware && ./util/qmk_install.sh && python3 -m pip install qmk
       - name: fix gcc
