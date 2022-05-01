@@ -1,2 +1,4 @@
 /qmk_firmware/
 /drivers/
+/.DS_Store
+/.vscode/

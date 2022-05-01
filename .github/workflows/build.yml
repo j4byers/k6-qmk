@@ -7,10 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-      - name: Clone SonixQMK
-        run: git clone https://github.com/SonixQMK/qmk_firmware.git
-      - name: Switch to OpenRGB Branch
-        run: cd qmk_firmware && git checkout origin/sn32_master_openrgb
+      - name: Clone SonixQMK OpenRGB Master Branch
+        run: git clone -b sn32_master_openrgb --single-branch https://github.com/SonixQMK/qmk_firmware.git
       - name: Install qmk deps
         run: cd qmk_firmware && ./util/qmk_install.sh && python3 -m pip install qmk
       - name: fix gcc
